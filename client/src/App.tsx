@@ -17,6 +17,7 @@ import Loading from './components/common/Loading';
 // Services
 import authService from './services/authService';
 import IndiaMap from './components/IndiaMap';
+import Map from './components/Map';
 
 interface User {
   _id: string;
@@ -91,7 +92,7 @@ function App() {
           <Route path="/profile" element={isAuthenticated ? <Profile user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/matches" element={isAuthenticated ? <Matches user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/chat" element={isAuthenticated ? <Chat user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
-          <Route path="/indiamap" element={isAuthenticated ? <IndiaMap  /> : <Navigate to="/" />} />
+          <Route path="/indiamap" element={isAuthenticated ? <Map   /> : <Navigate to="/" />} />
           
           {/* Catch all */}
           <Route path="*" element={<Navigate to="/" />} />

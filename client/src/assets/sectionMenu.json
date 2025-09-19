@@ -1,0 +1,30 @@
+{
+    "menu":[
+        {
+            "id":"1",
+            "img":"/cultural_sites/rajgad1.jpg",
+            "heading":"Cultural Heritage Sites"
+        },
+        {
+            "id":"2",
+            "img":"/festivals/shivaji_maharaj.webp",
+            "heading":"History of Maharashtra"
+        },
+        {
+            "id":"3",
+            "img":"/Ajanta_Caves.jpg",
+            "heading":"Culture and Traditions"
+            
+        },
+        {
+            "id":"4",
+            "img":"/festivals/ganesh.webp",
+            "heading":"Festivals of Maharashtra"
+        },
+        {
+            "id":"5",
+            "img":"/festivals/dhol.jpg",
+            "heading":"Musical Tradition"
+        }
+    ]
+}
