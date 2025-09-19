@@ -335,9 +335,9 @@ const statesData: State[] = [
 
 const IndiaMap: React.FC = () => {
   const [selectedState, setSelectedState] = useState<State | null>(null);
-  const [hoveredState, setHoveredState] = useState<string | null>(null);
+  // const [hoveredState, setHoveredState] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);

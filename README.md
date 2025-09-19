@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sanskriti Setu - Cultural Exchange Platform
 
 **SIH 2024 Problem Statement ID: 25130**
@@ -72,3 +73,6 @@ To create meaningful connections between people from different Indian states, en
 
 ---
 
+=======
+# sanskriti-setu-main
+>>>>>>> 0fd6983ad0612d47f9034cd4401953816e568622
