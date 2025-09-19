@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: sanskriti-setu-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server/test-server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        value: sih-2024-sanskriti-setu-production-jwt-secret-key
+      - key: MONGODB_URI
+        value: mongodb://localhost:27017/sanskriti-setu
