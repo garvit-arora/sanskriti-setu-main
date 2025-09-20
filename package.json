@@ -27,6 +27,7 @@
     "express-rate-limit": "^6.10.0",
     "firebase": "^12.2.1",
     "framer-motion": "^12.23.16",
+    "gsap": "^3.13.0",
     "helmet": "^7.0.0",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.544.0",

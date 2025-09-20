@@ -10,8 +10,8 @@ const LandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-orange-900">Sanskriti Setu</h1>
-              <span className="ml-2 text-sm text-orange-700">संस्कृति सेतु</span>
+              <h1 className="text-2xl font-bold text-orange-900">संस्कृति सेतु</h1>
+              <span className="ml-2 text-sm text-orange-700"></span>
             </div>
             <div className="flex items-center space-x-4">
               <Link 
@@ -150,7 +150,7 @@ const LandingPage: React.FC = () => {
             <h3 className="text-2xl font-bold mb-2">Sanskriti Setu</h3>
             <p className="text-gray-400 mb-6">Building bridges across India's diverse cultures</p>
             <div className="text-sm text-gray-500">
-              <p>Built for SIH 2024 - Problem Statement ID: 25130</p>
+              <p></p>
               <p className="mt-2">Student Innovation | Heritage & Culture | AICTE</p>
             </div>
           </div>

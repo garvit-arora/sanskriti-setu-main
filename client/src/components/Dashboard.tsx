@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Transition from './Transition';
 
 interface User {
   _id: string;
@@ -22,6 +23,7 @@ interface DashboardProps {
 
 const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
   return (
+    <Transition>
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
       <nav className="bg-white shadow-sm">
@@ -110,14 +112,14 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
             transition={{ delay: 0.3 }}
           >
             <Link 
-              to="/cultural-showcase" 
+              to="/indiamap" 
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-200 block"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🎭</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Cultural Showcase</h3>
-              <p className="text-gray-600 text-sm">Share your heritage</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">KYC</h3>
+              <p className="text-gray-600 text-sm">Know Your Country</p>
             </Link>
           </motion.div>
           
@@ -148,7 +150,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
                 <span className="text-sm">🎪</span>
               </div>
               <div>
-                <p className="font-medium">Someone liked your Ganesh Chaturthi post</p>
+                <p className="font-medium">Gaurav liked your Ganesh Chaturthi post</p>
                 <p className="text-sm text-gray-600">2 hours ago</p>
               </div>
             </div>
@@ -176,6 +178,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
         </div>
       </div>
     </div>
+    </Transition>
   );
 };
 

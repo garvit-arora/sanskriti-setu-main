@@ -18,6 +18,8 @@ import Loading from './components/common/Loading';
 import authService from './services/authService';
 import IndiaMap from './components/IndiaMap';
 import Map from './components/Map';
+import CulturalSites from './components/CulturalSites';
+import Guides from './components/Guides.jsx';
 
 interface User {
   _id: string;
@@ -85,6 +87,7 @@ function App() {
           <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" /> : <LandingPage />} />
           <Route path="/login" element={isAuthenticated ? <Navigate to="/dashboard" /> : <Login onLogin={handleLogin} />} />
           <Route path="/register" element={isAuthenticated ? <Navigate to="/dashboard" /> : <Register onLogin={handleLogin} />} />
+          <Route path="/guides" element={isAuthenticated ? <Navigate to="/guides" /> : <Guides />} />
           
           {/* Protected Routes */}
           <Route path="/dashboard" element={isAuthenticated ? <Dashboard user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
@@ -93,6 +96,7 @@ function App() {
           <Route path="/matches" element={isAuthenticated ? <Matches user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/chat" element={isAuthenticated ? <Chat user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/indiamap" element={isAuthenticated ? <Map   /> : <Navigate to="/" />} />
+          <Route path="/culturalsites" element={isAuthenticated ? <CulturalSites   /> : <Navigate to="/" />} />
           
           {/* Catch all */}
           <Route path="*" element={<Navigate to="/" />} />

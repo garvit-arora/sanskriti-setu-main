@@ -5,7 +5,7 @@ require('dotenv').config();
 // Demo users data
 const demoUsers = [
   {
-    name: 'SIH Demo User',
+    name: 'Demo User',
     email: 'demo@sanskriti.com',
     password: 'demo123',
     age: 25,
@@ -15,7 +15,7 @@ const demoUsers = [
       city: 'Mumbai',
       primaryLanguages: ['Hindi', 'Marathi'],
       regionalLanguages: ['English'],
-      bio: 'Cultural enthusiast participating in SIH 2024. Love sharing Maharashtrian traditions!',
+      bio: 'Cultural enthusiast & Love sharing Maharashtrian traditions!',
       festivals: [{
         name: 'Ganesh Chaturthi',
         description: 'Grand celebration of Lord Ganesha',
