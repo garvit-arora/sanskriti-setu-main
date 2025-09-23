@@ -10,6 +10,7 @@ import "../css/img-track.css";
 // import { log } from 'console';
 import { useNavigate } from "react-router-dom";
 import CulturalSites from "./CulturalSites";
+import Fesitvals from "./Festivals";
 function Map() {
   const navigate = useNavigate();
   const [selectedState, setSelectedState] = useState(null);
@@ -58,7 +59,7 @@ function Map() {
       },
     }),
   };
-  const handleCulture = ()=>{
+  const handleCulture = () => {
     navigate("/culturalsites");
   };
 
@@ -152,13 +153,18 @@ function Map() {
           <div id="image-track">
             {menu.menu.map((item) => (
               <Link
-                to="/culturalsites"
+                to={
+                  item.page === "cultural-places"
+                    ? "/culturalsites"
+                    : "/festivals"
+                }
                 key={item.id}
                 className="menu-container"
-                // onClick={handleCulture}
               >
                 <img src={item.img} alt="img" className="image" />
-                <h2> <b> {item.heading}</b></h2>
+                <h2>
+                  <b>{item.heading}</b>
+                </h2>
               </Link>
             ))}
           </div>

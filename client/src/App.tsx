@@ -19,6 +19,7 @@ import authService from './services/authService';
 import IndiaMap from './components/IndiaMap';
 import Map from './components/Map';
 import CulturalSites from './components/CulturalSites';
+import Festivals from './components/Festivals';
 import Guides from './components/Guides.jsx';
 
 interface User {
@@ -97,6 +98,7 @@ function App() {
           <Route path="/chat" element={isAuthenticated ? <Chat user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/indiamap" element={isAuthenticated ? <Map   /> : <Navigate to="/" />} />
           <Route path="/culturalsites" element={isAuthenticated ? <CulturalSites   /> : <Navigate to="/" />} />
+          <Route path="/festivals" element={isAuthenticated ? <Festivals  /> : <Navigate to="/" />} />
           
           {/* Catch all */}
           <Route path="*" element={<Navigate to="/" />} />
