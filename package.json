@@ -40,7 +40,8 @@
     "react-hot-toast": "^2.6.0",
     "react-router-dom": "^7.9.1",
     "react-scripts": "^5.0.1",
-    "socket.io": "^4.7.2"
+    "socket.io": "^4.7.2",
+    "web-vitals": "^5.1.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.8.0",

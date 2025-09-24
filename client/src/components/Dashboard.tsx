@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Transition from './Transition';
+import dance from "../assets/dance.jpeg"
+import food from "../assets/food.jpg"
+import arts from "../assets/arts.avif"
+import music from "../assets/music.jpg"
+
 
 interface User {
   _id: string;
@@ -49,7 +54,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
         </div>
       </nav>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="w-full m-0 px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -142,7 +147,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
         </div>
 
         {/* Recent Activity */}
-        <div className="bg-white rounded-xl shadow-lg p-6">
+        {/* <div className="bg-white rounded-xl shadow-lg p-6">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Recent Cultural Exchange Activity</h2>
           <div className="space-y-4">
             <div className="flex items-center p-4 bg-gray-50 rounded-lg">
@@ -175,6 +180,78 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
               </div>
             </div>
           </div>
+        </div> */}
+        <h1 className='text-4xl font-bold'>Categories</h1>
+        <br />
+         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+          >
+            <Link 
+              to="/discoverDance" 
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-200 block"
+            >
+             
+              <h3 className="text-2xl font-bold text-gray-900  mb-2">Dance</h3>
+              <p className="text-gray-600 text-sm">Find cultural Dances</p>
+              <br />
+              <img src={dance} className='rounded-2xl h-60 w-full' alt="dancePic" />
+
+            </Link>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+          >
+            <Link 
+              to="/discoverMusic" 
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-200 block"
+            >
+             
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Music</h3>
+              <p className="text-gray-600 text-sm">Find cultural Musics</p>
+              <br />
+              <img src={music} className='rounded-2xl h-60 w-full' alt="musicPic" />
+            </Link>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+          >
+            <Link 
+              to="/discover" 
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-200 block"
+            >
+             
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Food</h3>
+              <p className="text-gray-600 text-sm">Find cultural Food</p>
+              <br />
+              <img src={food} className='rounded-2xl h-60 w-full' alt="foodPic" />
+            </Link>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+          >
+            <Link 
+              to="/discover" 
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-200 block"
+            >
+             
+              <h3 className="text-2xl  font-bold text-gray-900 mb-2">Arts</h3>
+              <p className="text-gray-600 text-sm">Find cultural Arts</p>
+              <br />
+              <img src={arts} className='rounded-2xl h-60 w-full' alt="artsPic" />
+            </Link>
+          </motion.div>
         </div>
       </div>
     </div>

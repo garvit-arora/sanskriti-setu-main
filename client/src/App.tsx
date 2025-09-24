@@ -6,6 +6,8 @@ import './App.css';
 // Components
 import LandingPage from './components/LandingPage';
 import Login from './components/auth/Login';
+import DiscoverDance from './components/DiscoverDance';
+import DiscoverMusic from './components/DiscoverMusic';
 import Register from './components/auth/Register';
 import Dashboard from './components/Dashboard';
 import Discover from './components/Discover';
@@ -74,7 +76,7 @@ function App() {
     setIsAuthenticated(false);
     localStorage.removeItem('token');
   };
-
+  
   if (loading) {
     return <Loading />;
   }
@@ -93,6 +95,8 @@ function App() {
           {/* Protected Routes */}
           <Route path="/dashboard" element={isAuthenticated ? <Dashboard user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/discover" element={isAuthenticated ? <Discover user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
+          <Route path="/discoverDance" element={isAuthenticated ? <DiscoverDance user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
+          <Route path="/discoverMusic" element={isAuthenticated ? <DiscoverMusic user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/profile" element={isAuthenticated ? <Profile user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/matches" element={isAuthenticated ? <Matches user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/chat" element={isAuthenticated ? <Chat user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />

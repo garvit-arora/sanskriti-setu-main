@@ -1,4 +1,9 @@
 
+.sahitya-regular {
+  font-family: "Sahitya", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .home {
     height: 100vh;
     background: url('../../public/11CUT.png') no-repeat center center/cover;
