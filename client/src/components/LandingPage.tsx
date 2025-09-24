@@ -34,6 +34,7 @@ function Home() {
       </div>
       <section></section>
     </Transition>
+    
   );
 }
 export default Home;
