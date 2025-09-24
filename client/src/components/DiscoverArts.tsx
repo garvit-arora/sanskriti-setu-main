@@ -24,7 +24,7 @@ const imageStyle: React.CSSProperties = {
     "polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%)",
 };
 
-interface DiscoverDanceProps {
+interface DiscoverArtsProps {
   user: User | null;
   onLogout: () => void;
 }
@@ -68,15 +68,15 @@ const mockMatches = [
       primaryLanguages: ["Assamese", "Hindi"],
     },
     matchScore: 92,
-    commonInterests: ["Teaches Pitha"],
-    learning : ["Want To Learn Dhokhla"],
+    commonInterests: ["Teaches Endi"],
+    learning : ["Want To Learn Gond Art"],
     profilePicture: image3,
   },
   
     
 ];
 
-const DiscoverDance: React.FC<DiscoverDanceProps> = ({ user, onLogout }) => {
+const DiscoverArts: React.FC<DiscoverArtsProps> = ({ user, onLogout }) => {
   const [currentMatchIndex, setCurrentMatchIndex] = useState(0);
   const [matches] = useState(mockMatches);
 
@@ -194,10 +194,10 @@ const DiscoverDance: React.FC<DiscoverDanceProps> = ({ user, onLogout }) => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Discover Cultural Dances
+            Discover Cultural Artss
           </h1>
           <p className="text-gray-600">
-            Find people from different states to exchange dance with
+            Find people from different states to exchange Arts with
           </p>
         </div>
 
@@ -298,4 +298,4 @@ const DiscoverDance: React.FC<DiscoverDanceProps> = ({ user, onLogout }) => {
   );
 };
 
-export default DiscoverDance;
+export default DiscoverArts;

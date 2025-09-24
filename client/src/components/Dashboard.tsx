@@ -225,7 +225,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
             transition={{ delay: 0.1 }}
           >
             <Link 
-              to="/discover" 
+              to="/discoverFood" 
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-200 block"
             >
              
@@ -242,7 +242,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
             transition={{ delay: 0.1 }}
           >
             <Link 
-              to="/discover" 
+              to="/discoverArts" 
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-200 block"
             >
              

@@ -13,7 +13,10 @@ import Dashboard from './components/Dashboard';
 import Discover from './components/Discover';
 import Profile from './components/Profile';
 import Matches from './components/Matches';
+// import DiscoverMusic from './components/DiscoverMusic';
 import Chat from './components/Chat';
+import DiscoverArts from './components/DiscoverArts';
+import DiscoverFood from './components/DiscoverFood';
 // import CulturalShowcase from './components/CulturalShowcase';
 import Loading from './components/common/Loading';
 // Services
@@ -97,6 +100,8 @@ function App() {
           <Route path="/discover" element={isAuthenticated ? <Discover user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/discoverDance" element={isAuthenticated ? <DiscoverDance user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/discoverMusic" element={isAuthenticated ? <DiscoverMusic user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
+           <Route path="/discoverFood" element={isAuthenticated ? <DiscoverFood user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
+            <Route path="/discoverArts" element={isAuthenticated ? <DiscoverArts user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/profile" element={isAuthenticated ? <Profile user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/matches" element={isAuthenticated ? <Matches user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />
           <Route path="/chat" element={isAuthenticated ? <Chat user={user} onLogout={handleLogout} /> : <Navigate to="/" />} />

@@ -24,7 +24,7 @@ const imageStyle: React.CSSProperties = {
     "polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%)",
 };
 
-interface DiscoverDanceProps {
+interface DiscoverFoodProps {
   user: User | null;
   onLogout: () => void;
 }
@@ -76,7 +76,7 @@ const mockMatches = [
     
 ];
 
-const DiscoverDance: React.FC<DiscoverDanceProps> = ({ user, onLogout }) => {
+const DiscoverFood: React.FC<DiscoverFoodProps> = ({ user, onLogout }) => {
   const [currentMatchIndex, setCurrentMatchIndex] = useState(0);
   const [matches] = useState(mockMatches);
 
@@ -194,10 +194,10 @@ const DiscoverDance: React.FC<DiscoverDanceProps> = ({ user, onLogout }) => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Discover Cultural Dances
+            Discover Cultural Foods
           </h1>
           <p className="text-gray-600">
-            Find people from different states to exchange dance with
+            Find people from different states to exchange Food with
           </p>
         </div>
 
@@ -298,4 +298,4 @@ const DiscoverDance: React.FC<DiscoverDanceProps> = ({ user, onLogout }) => {
   );
 };
 
-export default DiscoverDance;
+export default DiscoverFood;

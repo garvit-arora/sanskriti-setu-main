@@ -1,6 +1,7 @@
 import "../css/home.css";
 import Transition from "../components/Transition";
 import { NavLink } from "react-router-dom";
+import ArtStyle from "./ArtStyle";
 import Header from "./Header";
 // import {handleLogout} from "../App"
 <style>
@@ -32,7 +33,9 @@ function Home() {
         <div className="green-div"></div>
         <div className=""></div>
       </div>
-      <section></section>
+      <section>
+        <ArtStyle />
+      </section>
     </Transition>
     
   );
