@@ -12,6 +12,7 @@ import lotus from "../assets/lotus.jpg"
 import fort from "../assets/fort.jpg"
 import akhbar from "../assets/akbar.jpg"
 import church from '../assets/church.jpg'
+import Footer from './Footer';
 
 
 const AnimatedCard = ({ image, title }) => {
@@ -91,6 +92,7 @@ const CulturalSites = () => {
                 title="Basilica of Bom Jesus"
             />
         </div>
+         <Footer />
         </Transition>
     );
 }

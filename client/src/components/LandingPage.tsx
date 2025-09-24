@@ -3,6 +3,7 @@ import Transition from "../components/Transition";
 import { NavLink } from "react-router-dom";
 import ArtStyle from "./ArtStyle";
 import Header from "./Header";
+import Footer from "./Footer";
 // import {handleLogout} from "../App"
 <style>
   @import
@@ -36,8 +37,8 @@ function Home() {
       <section>
         <ArtStyle />
       </section>
+      <Footer />
     </Transition>
-    
   );
 }
 export default Home;

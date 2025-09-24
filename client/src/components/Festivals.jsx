@@ -12,6 +12,7 @@ import durga from '../assets/durja puja.jpg'
 import ganesh from '../assets/Ganesh Festival.jpg'
 import holi from '../assets/holi.jpg'
 import eid from '../assets/eid2.jpg'
+import Footer from './Footer';
 
 
 const AnimatedCard = ({ image, title }) => {
@@ -91,6 +92,7 @@ const Festivals = () => {
                 title="Ganesh Chaturthi - The festival of Creation & Dissolution"
             />
         </div>
+         <Footer />
         </Transition>
     );
 }

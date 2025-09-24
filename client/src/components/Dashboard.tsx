@@ -6,6 +6,7 @@ import dance from "../assets/dance.jpeg"
 import food from "../assets/food.jpg"
 import arts from "../assets/arts.avif"
 import music from "../assets/music.jpg"
+import Footer from './Footer';
 
 
 interface User {
@@ -29,7 +30,7 @@ interface DashboardProps {
 const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
   return (
     <Transition>
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen" style={{ background: "linear-gradient(135deg, #f0edf6 0%, #ffe283 110%)" }}>
       {/* Navigation */}
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -255,6 +256,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
         </div>
       </div>
     </div>
+    <Footer />
     </Transition>
   );
 };

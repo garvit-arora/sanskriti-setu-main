@@ -100,7 +100,7 @@ const DiscoverDance: React.FC<DiscoverDanceProps> = ({ user, onLogout }) => {
 
   if (currentMatchIndex >= matches.length) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen" style={{ background: "linear-gradient(135deg, #f0edf6 0%, #ffe283 110%)" }}>
         <nav className="bg-white shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
