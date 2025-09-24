@@ -6,7 +6,8 @@ import dance from "../assets/dance.jpeg"
 import food from "../assets/food.jpg"
 import arts from "../assets/arts.avif"
 import music from "../assets/music.jpg"
-
+import bgImage from "../assets/back.jpg"
+import CulturalCalendar from './CultureCalendar';
 
 interface User {
   _id: string;
@@ -268,6 +269,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
         </div>
       </div>
     </div>
+    <CulturalCalendar />
     </Transition>
   );
 };
