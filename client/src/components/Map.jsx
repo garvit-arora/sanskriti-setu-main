@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import SvgComponent from "./SvgComponent";
-import siteinfo from "../assets/sitesinfo.json";
+import sitesinfo from "../assets/sitesinfo.json";
 import { Link } from "react-router-dom";
 import "../css/map.css";
 import Transition from "../components/Transition";
@@ -29,7 +29,7 @@ function Map() {
 
   useEffect(() => {
     if (selectedState) {
-      const state = siteinfo.states.find(
+      const state = sitesinfo.states.find(
         (s) =>
           s.name.toLowerCase().trim() === selectedState.toLowerCase().trim()
       );
@@ -89,7 +89,7 @@ function Map() {
                         <motion.div
                           initial="hidden"
                           animate="visible"
-                          custom={index}
+                          custom={index}  
                           variants={listVariants}
                           whileHover={{
                             scale: 1.05,
