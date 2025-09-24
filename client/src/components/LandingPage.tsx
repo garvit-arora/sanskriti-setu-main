@@ -37,6 +37,7 @@ function Home() {
         <ArtStyle />
       </section>
     </Transition>
+    
   );
 }
 export default Home;

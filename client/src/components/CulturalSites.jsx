@@ -11,9 +11,7 @@ import charminar from "../assets/charminar.jpeg"
 import lotus from "../assets/lotus.jpg"
 import fort from "../assets/fort.jpg"
 import akhbar from "../assets/akbar.jpg"
-
-
-
+import church from '../assets/church.jpg'
 
 
 const AnimatedCard = ({ image, title }) => {
@@ -86,6 +84,11 @@ const CulturalSites = () => {
                 image={fort}
 
                 title="Agra fort"
+            />
+            <AnimatedCard
+                image={church}
+
+                title="Basilica of Bom Jesus"
             />
         </div>
         </Transition>
