@@ -100,7 +100,7 @@ const DiscoverArts: React.FC<DiscoverArtsProps> = ({ user, onLogout }) => {
 
   if (currentMatchIndex >= matches.length) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen" style={{ background: "linear-gradient(135deg, #f0edf6 0%, #ffe283 110%)" }}>
         <nav className="bg-white shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
@@ -155,7 +155,7 @@ const DiscoverArts: React.FC<DiscoverArtsProps> = ({ user, onLogout }) => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen" style={{ background: "linear-gradient(135deg, #f0edf6 0%, #ffe283 110%)" }}>
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
@@ -194,7 +194,7 @@ const DiscoverArts: React.FC<DiscoverArtsProps> = ({ user, onLogout }) => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Discover Cultural Artss
+            Discover Traditional Arts
           </h1>
           <p className="text-gray-600">
             Find people from different states to exchange Arts with
