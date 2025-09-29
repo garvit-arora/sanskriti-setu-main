@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 // import CulturalSites from "./CulturalSites";
 // import Fesitvals from "./Festivals";
 function Map() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [selectedState, setSelectedState] = useState(null);
   const [transformCoor, setTransformCoor] = useState({
     scale: 1,
