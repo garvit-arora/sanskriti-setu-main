@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import menu from "../assets/sectionMenu.json";
 import "../css/img-track.css";
 // import { log } from 'console';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import CulturalSites from "./CulturalSites";
 // import Fesitvals from "./Festivals";
 function Map() {
