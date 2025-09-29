@@ -9,8 +9,8 @@ import menu from "../assets/sectionMenu.json";
 import "../css/img-track.css";
 // import { log } from 'console';
 import { useNavigate } from "react-router-dom";
-import CulturalSites from "./CulturalSites";
-import Fesitvals from "./Festivals";
+// import CulturalSites from "./CulturalSites";
+// import Fesitvals from "./Festivals";
 function Map() {
   const navigate = useNavigate();
   const [selectedState, setSelectedState] = useState(null);
@@ -59,9 +59,9 @@ function Map() {
       },
     }),
   };
-  const handleCulture = () => {
-    navigate("/culturalsites");
-  };
+  // const handleCulture = () => {
+  //   navigate("/culturalsites");
+  // };
 
   return (
     <Transition>

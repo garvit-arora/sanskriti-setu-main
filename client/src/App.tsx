@@ -21,7 +21,7 @@ import DiscoverFood from './components/DiscoverFood';
 import Loading from './components/common/Loading';
 // Services
 import authService from './services/authService';
-import IndiaMap from './components/IndiaMap';
+// import IndiaMap from './components/IndiaMap';
 import Map from './components/Map';
 import CulturalSites from './components/CulturalSites';
 import Festivals from './components/Festivals';

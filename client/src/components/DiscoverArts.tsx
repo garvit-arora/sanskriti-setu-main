@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import image1 from "../assets/tamilnadu.jpg";
 import image2 from "../assets/puunjabi.jpg";
 import image3 from "../assets/assam.jpeg";
-import image4 from "../assets/man2.webp";
+// import image4 from "../assets/man2.webp";
 
 
 interface User {

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Map from "./Map";
+// import Map from "./Map";
 import {} from "./Map"
 export default function SvgComponent({
   selectedState,
@@ -34,8 +34,8 @@ export default function SvgComponent({
     setSelectedState(stateId);
   };
 
-  const [hoveredState, setHoveredState] = useState(null);
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  // const [hoveredState, setHoveredState] = useState(null);
+  // const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseEnter = (stateName) => {
     setHoveredState(stateName);

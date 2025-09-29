@@ -2,7 +2,7 @@ import "../css/home.css";
 import Transition from "../components/Transition";
 import { NavLink } from "react-router-dom";
 import ArtStyle from "./ArtStyle";
-import Header from "./Header";
+// import Header from "./Header";
 import Footer from "./Footer";
 // import {handleLogout} from "../App"
 <style>
@@ -11,9 +11,9 @@ import Footer from "./Footer";
 </style>;
 
 function Home() {
-  const handleLogout = () => {
-    console.log("Logged Out");
-  };
+  // const handleLogout = () => {
+  //   console.log("Logged Out");
+  // };
 
   return (
     <Transition>
