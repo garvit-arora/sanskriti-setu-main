@@ -34,8 +34,8 @@ export default function SvgComponent({
     setSelectedState(stateId);
   };
 
-  // const [hoveredState, setHoveredState] = useState(null);
-  // const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [_hoveredState, setHoveredState] = useState(null);
+  const [_cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseEnter = (stateName) => {
     setHoveredState(stateName);
