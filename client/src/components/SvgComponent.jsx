@@ -34,8 +34,10 @@ export default function SvgComponent({
     setSelectedState(stateId);
   };
 
-  const [_hoveredState, setHoveredState] = useState(null);
-  const [_cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+ // eslint-disable-next-line @typescript-eslint/no-unused-vars
+const [hoveredState, setHoveredState] = useState(null);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseEnter = (stateName) => {
     setHoveredState(stateName);
